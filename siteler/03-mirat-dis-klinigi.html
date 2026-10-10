@@ -1,0 +1,302 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mirat Diş Kliniği</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;1,500&family=Albert+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#FBF7F5; --surface:#FFFFFF; --surface-2:#F3E8E3;
+  --ink:#3B2E2E; --muted:#8A7A74; --border:#EBDFDA;
+  --rosegold:#B8846B; --rosegold-ink:#FFFFFF; --taupe:#9C8C86;
+  --shadow:0 18px 40px -20px rgba(59,46,46,.18);
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Albert Sans",system-ui,sans-serif;line-height:1.65;margin:0}
+h1,h2,h3{font-family:"Petrona",Georgia,serif;text-wrap:balance;margin:0;color:var(--ink)}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rosegold);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:14px 28px;font-weight:600;font-size:.92rem;border:1px solid transparent;cursor:pointer;font-family:"Albert Sans",sans-serif}
+.btn-rose{background:var(--rosegold);color:var(--rosegold-ink)}
+.btn-line{background:transparent;border:1px solid var(--ink);color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--rosegold);outline-offset:3px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb, var(--bg) 90%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:18px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Petrona",serif;font-style:italic;font-weight:500;font-size:1.35rem}
+.navlinks{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:.86rem;color:var(--muted)}
+.navlinks a:hover{color:var(--rosegold)}
+.burger{display:none;background:none;border:1px solid var(--border);border-radius:999px;padding:8px;cursor:pointer}
+@media (max-width:900px){.navlinks{display:none}.burger{display:inline-flex}}
+
+.hero{padding-block:62px 20px}
+.heroInner{max-width:700px;margin:0 auto;text-align:center}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.3rem);margin-block:18px 20px;font-style:italic;font-weight:500}
+.hero p.lead{color:var(--muted);font-size:1.08rem;max-width:50ch;margin-inline:auto}
+.heroCtas{display:flex;gap:16px;justify-content:center;margin-top:32px;flex-wrap:wrap}
+
+.timelineSection{padding-block:56px}
+.sectionHead{max-width:600px;margin-bottom:38px}
+.sectionHead.center{margin-inline:auto;text-align:center}
+.sectionHead h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:10px;font-weight:500}
+.sectionHead p{color:var(--muted);margin-top:12px}
+
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+@media (max-width:860px){.timeline{grid-template-columns:1fr;gap:20px}}
+.timeline:before{content:'';position:absolute;top:28px;left:6%;right:6%;height:1px;background:var(--border)}
+@media (max-width:860px){.timeline:before{display:none}}
+.tStep{position:relative;padding-inline:16px;text-align:center}
+@media (max-width:860px){.tStep{text-align:left;display:flex;gap:16px;align-items:flex-start}}
+.tDot{width:14px;height:14px;border-radius:50%;background:var(--rosegold);margin:0 auto 20px;position:relative;z-index:1}
+@media (max-width:860px){.tDot{margin:4px 0 0}}
+.tStep h3{font-size:1.02rem;font-weight:500}
+.tStep p{color:var(--muted);font-size:.86rem;margin-top:8px}
+
+.conciergeBand{background:var(--surface-2);border-radius:24px;padding:44px}
+.conciergeGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:860px){.conciergeGrid{grid-template-columns:1fr}}
+.conciergeItem{background:var(--surface);border-radius:18px;padding:24px}
+.conciergeItem svg{color:var(--rosegold)}
+.conciergeItem h3{font-size:1rem;margin-top:12px;font-weight:500}
+.conciergeItem p{color:var(--muted);font-size:.86rem;margin-top:8px}
+
+.svcGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:860px){.svcGrid{grid-template-columns:1fr}}
+.svcCard{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:26px}
+.svcCard h3{font-size:1.1rem;font-weight:500;font-style:italic}
+.svcCard p{color:var(--muted);font-size:.88rem;margin-top:10px}
+
+.docSplit{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:center}
+@media (max-width:860px){.docSplit{grid-template-columns:1fr}}
+.docPortrait{aspect-ratio:3/4;background:linear-gradient(160deg,var(--surface-2),var(--rosegold) 140%);border-radius:20px;display:flex;align-items:center;justify-content:center;color:#fff;overflow:hidden}
+.docPortrait img{width:100%;height:100%;object-fit:cover}
+.docQuote{margin-top:20px;font-style:italic;font-family:"Petrona",serif;font-size:1.3rem;color:var(--rosegold)}
+
+.testiWrap{max-width:680px;margin:0 auto;text-align:center}
+.testiWrap p.quote{font-family:"Petrona",serif;font-style:italic;font-size:1.3rem;color:var(--ink)}
+.testiWrap .who{margin-top:16px;color:var(--muted);font-size:.84rem}
+
+.faq{border-top:1px solid var(--border);max-width:740px;margin:0 auto}
+.faqItem{border-bottom:1px solid var(--border)}
+.faqQ{width:100%;text-align:left;background:none;border:none;padding:20px 4px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:"Petrona",serif;font-weight:500;color:var(--ink);font-size:1.05rem}
+.faqQ svg{color:var(--rosegold);flex:none;transition:transform .2s}
+.faqItem[open] .faqQ svg{transform:rotate(45deg)}
+.faqA{padding:0 4px 20px;color:var(--muted);font-size:.9rem;max-width:62ch}
+
+.formSection{background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:34px;box-shadow:var(--shadow)}
+@media (max-width:860px){.formSection{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.field label{font-size:.78rem;color:var(--muted);font-weight:600}
+.field input,.field select{border:1px solid var(--border);background:var(--bg);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:.92rem;color:var(--ink)}
+.timeChips{display:flex;gap:10px;flex-wrap:wrap}
+.timeChip{border:1px solid var(--border);border-radius:999px;padding:8px 14px;font-size:.84rem;cursor:pointer;background:var(--bg)}
+.timeChip input{margin-right:6px}
+.successMsg{background:var(--surface-2);border:1px solid var(--rosegold);border-radius:14px;padding:12px 14px;font-size:.88rem;margin-top:12px;color:var(--rosegold)}
+
+footer{background:var(--surface-2);padding-block:46px 28px;border-top:1px solid var(--border)}
+.footGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+@media (max-width:760px){.footGrid{grid-template-columns:1fr}}
+.footGrid h4{font-family:"Petrona",serif;font-style:italic;font-size:.92rem;color:var(--rosegold);margin-bottom:14px;font-weight:500}
+.footGrid p,.footGrid a{display:block;font-size:.9rem;color:var(--ink);text-decoration:none;margin-bottom:9px}
+.copyBtn{font-size:.76rem;color:var(--rosegold);background:none;border:1px solid var(--border);border-radius:6px;padding:3px 9px;margin-left:8px;cursor:pointer}
+.hoursTable td{padding:3px 0;font-size:.88rem}
+.hoursTable td:first-child{color:var(--muted);padding-right:16px}
+.finePrint{margin-top:30px;padding-top:20px;border-top:1px solid var(--border);font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.waBtn{position:fixed;bottom:22px;right:22px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.3);z-index:50}
+</style>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">Mirat Diş Kliniği</div>
+    <ul class="navlinks">
+      <li><a href="#yolculuk">Hasta Yolculuğu</a></li>
+      <li><a href="#konsiyerj">Konsiyerj Hizmetleri</a></li>
+      <li><a href="#tedaviler">Tedaviler</a></li>
+      <li><a href="#hekim">Hekimimiz</a></li>
+      <li><a href="#randevu">Randevu</a></li>
+    </ul>
+    <button class="burger" aria-label="Menü"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap heroInner">
+    <span class="eyebrow">Etiler · Özel Danışmanlık ile Çalışan Butik Klinik</span>
+    <h1>Her hasta için ayrılan zaman, sınırlı ve değerli</h1>
+    <p class="lead">Mirat Diş Kliniği'nde günlük randevu sayısı sınırlıdır; böylece her tedavi kişisel bir danışmanlık deneyimine dönüşür.</p>
+    <div class="heroCtas">
+      <a href="#randevu" class="btn btn-rose">Özel Danışmanlık Talep Et</a>
+      <a href="#yolculuk" class="btn btn-line">Hasta Yolculuğunu Gör</a>
+    </div>
+  </div>
+</section>
+
+<section id="yolculuk" class="timelineSection">
+  <div class="wrap">
+    <div class="sectionHead center">
+      <span class="eyebrow">Hasta Yolculuğu</span>
+      <h2>Dört adımda kişiselleştirilmiş bakım</h2>
+    </div>
+    <div class="timeline">
+      <div class="tStep"><div class="tDot"></div><h3>Özel Danışmanlık</h3><p>Beklentilerinizi dinlemek için ayrılan sakin bir görüşme.</p></div>
+      <div class="tStep"><div class="tDot"></div><h3>Dijital Değerlendirme</h3><p>Ağız içi tarama ile kişisel tedavi planının oluşturulması.</p></div>
+      <div class="tStep"><div class="tDot"></div><h3>Uygulama</h3><p>Size ayrılan özel odada, hızınıza uygun tedavi.</p></div>
+      <div class="tStep"><div class="tDot"></div><h3>Takip</h3><p>Tedavi sonrası düzenli kontrol ve kişisel danışman desteği.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="konsiyerj">
+  <div class="wrap">
+    <div class="conciergeBand">
+      <div class="sectionHead center" style="margin-bottom:28px"><span class="eyebrow">Konsiyerj Hizmetleri</span><h2 style="font-size:1.6rem">Tedavinin ötesinde bir deneyim</h2></div>
+      <div class="conciergeGrid">
+        <div class="conciergeItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/></svg><h3>Kişisel Danışman</h3><p>Tüm süreç boyunca size eşlik eden tek bir iletişim noktası.</p></div>
+        <div class="conciergeItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/></svg><h3>Özel Bekleme Salonu</h3><p>Sessiz, ferah ve sınırlı sayıda misafir ağırlayan özel alan.</p></div>
+        <div class="conciergeItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12c2-5 14-5 16 0" stroke="currentColor" stroke-width="1.5"/></svg><h3>Esnek Randevu Saatleri</h3><p>İş programınıza uygun erken veya akşam saatlerinde randevu.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tedaviler">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Tedavilerimiz</span>
+      <h2>Zarafetle planlanan estetik ve genel bakım</h2>
+    </div>
+    <div class="svcGrid">
+      <div class="svcCard"><h3>Gülüş Tasarımı</h3><p>Yüz hattınıza özel, dijital simülasyonla onaylı estetik tedavi.</p></div>
+      <div class="svcCard"><h3>Porselen Kaplama</h3><p>İnce, doğal ışık geçirgenliğine sahip estetik kaplama.</p></div>
+      <div class="svcCard"><h3>Nazik Beyazlatma</h3><p>Hassasiyete duyarlı, düşük tahrişli beyazlatma protokolü.</p></div>
+      <div class="svcCard"><h3>Şeffaf Plak Tedavisi</h3><p>Görünmez, kişisel takip programıyla planlanan ortodonti.</p></div>
+      <div class="svcCard"><h3>İmplant Danışmanlığı</h3><p>Detaylı görüntüleme ile planlanan tek diş implant çözümü.</p></div>
+      <div class="svcCard"><h3>Genel Bakım</h3><p>Düzenli kontrol ve koruyucu diş sağlığı danışmanlığı.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="hekim" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="docSplit">
+      <div class="docPortrait"><img src="../kadin_fotograflari/s05_ece-yalman.jpg" alt="Dt. Leyla Vuran"></div>
+      <div>
+        <span class="eyebrow">Kurucu Hekim</span>
+        <h3 style="font-size:1.9rem;margin-top:10px;font-style:italic">Dt. Leyla Vuran</h3>
+        <p style="color:var(--muted);margin-top:16px;max-width:52ch">13 yıldır estetik diş hekimliği alanında çalışan Dt. Leyla Vuran, Mirat'ı her hastaya özel zaman ayırma ilkesiyle kurdu. Günlük randevu sayısını kasıtlı olarak sınırlı tutuyor.</p>
+        <p class="docQuote">"Acelesi olmayan bir tedavi, her zaman daha iyi bir tedavidir."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="testiWrap">
+      <p class="quote">"Randevu saatimde sadece ben vardım. Hiçbir zaman acele ettirilmiş hissetmedim."</p>
+      <div class="who">Ece K. — Mirat hastası</div>
+    </div>
+  </div>
+</section>
+
+<section id="sss">
+  <div class="wrap">
+    <div class="sectionHead center"><span class="eyebrow">Sıkça Sorulanlar</span><h2>Merak ettikleriniz</h2></div>
+    <div class="faq">
+      <details class="faqItem" open><summary class="faqQ">Günlük randevu sayısı neden sınırlı? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><p class="faqA">Her hastaya yeterli zaman ayırabilmek için günlük randevu sayısını kasıtlı olarak sınırlı tutuyoruz.</p></details>
+      <details class="faqItem"><summary class="faqQ">Kişisel danışmanım kim olacak? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><p class="faqA">İlk görüşmenizde size bir danışman atanır ve süreç boyunca iletişiminiz bu kişi üzerinden yürür.</p></details>
+      <details class="faqItem"><summary class="faqQ">Akşam saatlerinde randevu alabilir miyim? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><p class="faqA">Evet, esnek randevu saatlerimiz arasında hafta içi akşam seçenekleri de bulunur.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="randevu">
+  <div class="wrap">
+    <div class="sectionHead center"><span class="eyebrow">Özel Danışmanlık</span><h2>Size özel bir zaman ayıralım</h2></div>
+    <div class="formSection">
+      <div>
+        <h3 style="font-size:1.2rem;font-weight:500">Nasıl işler?</h3>
+        <p style="color:var(--muted);margin-top:14px">Formu doldurduğunuzda kişisel danışmanınız sizi arayarak uygun bir zaman planlar. Bu ilk görüşme herhangi bir tedavi içermez.</p>
+      </div>
+      <form id="miratForm">
+        <div class="field"><label for="mName">Ad Soyad</label><input id="mName" required></div>
+        <div class="field"><label for="mPhone">Telefon</label><input id="mPhone" type="tel" required></div>
+        <div class="field"><label>Tercih Edilen Zaman</label>
+          <div class="timeChips">
+            <label class="timeChip"><input type="radio" name="time" checked>Sabah</label>
+            <label class="timeChip"><input type="radio" name="time">Öğleden Sonra</label>
+            <label class="timeChip"><input type="radio" name="time">Akşam</label>
+          </div>
+        </div>
+        <button class="btn btn-rose" type="submit" style="width:100%;justify-content:center">Danışmanlık Talep Et</button>
+        <div id="mSuccess" class="successMsg" hidden>Talebiniz alındı. Kişisel danışmanınız sizi arayacaktır.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footGrid">
+      <div>
+        <h4>Mirat Diş Kliniği</h4>
+        <p>Nispetiye Cad. No:19, Etiler / İstanbul</p>
+        <p>Telefon: <span id="phoneText">0212 287 95 60</span><button class="copyBtn" onclick="copyText('phoneText','cp1')">Kopyala</button></p>
+        <p>E-posta: <span id="mailText">danisma@miratdis.com</span><button class="copyBtn" onclick="copyText('mailText','cp2')">Kopyala</button></p>
+        <p id="cp1" style="color:var(--rosegold);font-size:.78rem" hidden>Telefon kopyalandı.</p>
+        <p id="cp2" style="color:var(--rosegold);font-size:.78rem" hidden>E-posta kopyalandı.</p>
+      </div>
+      <div>
+        <h4>Randevu Saatleri</h4>
+        <table class="hoursTable">
+          <tr><td>Pzt–Cuma</td><td>09:00 – 20:00</td></tr>
+          <tr><td>Cumartesi</td><td>10:00 – 16:00</td></tr>
+          <tr><td>Pazar</td><td>Kapalı</td></tr>
+        </table>
+      </div>
+      <div>
+        <h4>Keşfet</h4>
+        <a href="#yolculuk">Hasta Yolculuğu</a>
+        <a href="#konsiyerj">Konsiyerj Hizmetleri</a>
+        <a href="#tedaviler">Tedaviler</a>
+      </div>
+    </div>
+    <div class="finePrint"><span>© 2026 Mirat Diş Kliniği</span><span>Bu site örnek portfolyo amaçlı hazırlanmıştır.</span></div>
+  </div>
+</footer>
+
+<a class="waBtn" href="https://wa.me/905322879560" target="_blank" rel="noopener" aria-label="WhatsApp'tan yazın">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.1 1.7 2.6 4.1 3.6 2.4 1 2.4.7 2.8.6.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.1-.5-.2Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script>
+document.getElementById('miratForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('mSuccess').hidden = false;
+  this.reset();
+});
+function copyText(id,msgId){
+  var text = document.getElementById(id).textContent;
+  function show(){ var m=document.getElementById(msgId); m.hidden=false; setTimeout(function(){m.hidden=true;},2200); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(show).catch(show); } else { show(); }
+}
+var burger = document.querySelector('.burger');
+var navlinks = document.querySelector('.navlinks');
+burger.addEventListener('click', function(){
+  var showing = navlinks.style.display === 'flex';
+  navlinks.style.display = showing ? 'none' : 'flex';
+  navlinks.style.flexDirection='column';
+  navlinks.style.position='absolute';
+  navlinks.style.top='66px';
+  navlinks.style.right='20px';
+  navlinks.style.background='var(--surface)';
+  navlinks.style.border='1px solid var(--border)';
+  navlinks.style.borderRadius='16px';
+  navlinks.style.padding='16px 22px';
+});
+</script>
+
+</body></html>

@@ -1,0 +1,309 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Zümrüt Ağız ve Diş Sağlığı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F7F6F1; --surface:#FFFFFF; --surface-2:#EFEEE5;
+  --ink:#1B2B23; --muted:#5E6B62; --border:#DEDFD3;
+  --emerald:#1F5C44; --emerald-ink:#FFFFFF; --gold:#B08D3F;
+  --shadow:0 16px 36px -20px rgba(27,43,35,.22);
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;line-height:1.65;margin:0}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;text-wrap:balance;margin:0;color:var(--ink)}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:2px;padding:14px 28px;font-weight:600;font-size:.9rem;border:1px solid var(--emerald);cursor:pointer;font-family:"Public Sans",sans-serif}
+.btn-emerald{background:var(--emerald);color:var(--emerald-ink)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb, var(--bg) 92%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:18px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Newsreader",serif;font-weight:500;font-size:1.3rem}
+.navlinks{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:.84rem;letter-spacing:.03em;color:var(--muted)}
+.navlinks a:hover{color:var(--emerald)}
+.burger{display:none;background:none;border:1px solid var(--border);border-radius:2px;padding:8px;cursor:pointer}
+@media (max-width:900px){.navlinks{display:none}.burger{display:inline-flex}}
+
+.hero{padding-block:64px 10px}
+.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+@media (max-width:900px){.heroGrid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2.1rem,4.4vw,3.3rem);margin-block:18px 18px;font-weight:500}
+.hero p.lead{color:var(--muted);font-size:1.06rem;max-width:44ch}
+.heroCtas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+
+.credPanel{background:var(--surface);border:1px solid var(--border);padding:34px;box-shadow:var(--shadow)}
+.credRow{display:flex;justify-content:space-between;padding-block:13px;border-bottom:1px solid var(--border)}
+.credRow:first-child{border-top:1px solid var(--border)}
+.credRow .k{font-size:.82rem;color:var(--muted)}
+.credRow .v{font-weight:600;font-family:"Newsreader",serif}
+
+.accreditStrip{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding-block:20px;margin-top:40px}
+.accreditRow{display:flex;justify-content:space-around;flex-wrap:wrap;gap:24px}
+.accreditItem{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--muted);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.accreditItem svg{color:var(--gold)}
+
+section{padding-block:60px}
+.sectionHead{max-width:600px;margin-bottom:38px}
+.sectionHead.center{margin-inline:auto;text-align:center}
+.sectionHead h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:10px;font-weight:500}
+.sectionHead p{color:var(--muted);margin-top:12px}
+
+.svcGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+@media (max-width:860px){.svcGrid{grid-template-columns:1fr}}
+.svcCard{background:var(--surface);padding:32px}
+.svcCard h3{font-size:1.15rem;font-weight:500}
+.svcCard p{color:var(--muted);font-size:.9rem;margin-top:12px}
+
+.intlBand{background:var(--surface-2);border-radius:2px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media (max-width:860px){.intlBand{grid-template-columns:1fr}}
+.intlList{display:flex;flex-direction:column;gap:18px}
+.intlItem{display:flex;gap:14px}
+.intlItem svg{color:var(--emerald);flex:none;margin-top:3px}
+.intlItem h3{font-size:1rem;font-weight:600;font-family:"Public Sans",sans-serif}
+.intlItem p{color:var(--muted);font-size:.86rem;margin-top:4px}
+
+.docGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+@media (max-width:860px){.docGrid{grid-template-columns:1fr}}
+.docCard{background:var(--surface);padding:30px}
+.docPhoto{width:64px;height:64px;border-radius:50%;background:var(--surface-2);display:flex;align-items:center;justify-content:center;color:var(--emerald);margin-bottom:16px;border:1px solid var(--border);overflow:hidden}
+.docPhoto img{width:100%;height:100%;object-fit:cover}
+.docCard h3{font-size:1.05rem;font-weight:500}
+.docRole{color:var(--gold);font-size:.8rem;letter-spacing:.04em;margin-top:4px;text-transform:uppercase}
+.credList{margin-top:14px;display:flex;flex-direction:column;gap:5px}
+.credList span{font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:baseline}
+.credList span:before{content:'—';color:var(--gold)}
+
+.testiWrap{max-width:720px;margin:0 auto;text-align:center}
+.testiWrap p.quote{font-family:"Newsreader",serif;font-style:italic;font-size:1.4rem;color:var(--ink)}
+.testiWrap .who{margin-top:16px;color:var(--muted);font-size:.84rem;letter-spacing:.04em;text-transform:uppercase}
+
+.faq{border-top:1px solid var(--border);max-width:760px;margin:0 auto}
+.faqItem{border-bottom:1px solid var(--border)}
+.faqQ{width:100%;text-align:left;background:none;border:none;padding:20px 4px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:"Newsreader",serif;font-weight:500;color:var(--ink);font-size:1.08rem}
+.faqQ svg{color:var(--gold);flex:none;transition:transform .2s}
+.faqItem[open] .faqQ svg{transform:rotate(45deg)}
+.faqA{padding:0 4px 20px;color:var(--muted);font-size:.9rem;max-width:62ch}
+
+.formSection{background:var(--surface);border:1px solid var(--border);padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media (max-width:860px){.formSection{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.field label{font-size:.78rem;color:var(--muted);font-weight:600;letter-spacing:.02em}
+.field input,.field select{border:1px solid var(--border);background:var(--bg);border-radius:2px;padding:12px 14px;font-family:inherit;font-size:.92rem;color:var(--ink)}
+.successMsg{background:var(--surface-2);border:1px solid var(--emerald);border-radius:2px;padding:12px 14px;font-size:.88rem;margin-top:12px;color:var(--emerald)}
+
+footer{background:var(--surface-2);padding-block:46px 28px;border-top:1px solid var(--border)}
+.footGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+@media (max-width:760px){.footGrid{grid-template-columns:1fr}}
+.footGrid h4{font-family:"Newsreader",serif;font-size:.9rem;color:var(--emerald);margin-bottom:14px;font-weight:500}
+.footGrid p,.footGrid a{display:block;font-size:.9rem;color:var(--ink);text-decoration:none;margin-bottom:9px}
+.copyBtn{font-size:.76rem;color:var(--emerald);background:none;border:1px solid var(--border);border-radius:2px;padding:3px 9px;margin-left:8px;cursor:pointer}
+.hoursTable td{padding:3px 0;font-size:.88rem}
+.hoursTable td:first-child{color:var(--muted);padding-right:16px}
+.finePrint{margin-top:30px;padding-top:20px;border-top:1px solid var(--border);font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.waBtn{position:fixed;bottom:22px;right:22px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.3);z-index:50}
+</style>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2 20 7v10l-8 5-8-5V7Z" stroke="var(--emerald)" stroke-width="1.3"/></svg>
+      Zümrüt Ağız ve Diş Sağlığı
+    </div>
+    <ul class="navlinks">
+      <li><a href="#hizmetler">Tedaviler</a></li>
+      <li><a href="#uluslararasi">Uluslararası Hasta</a></li>
+      <li><a href="#hekimler">Hekim Kadrosu</a></li>
+      <li><a href="#sss">Sıkça Sorulanlar</a></li>
+      <li><a href="#basvuru">Başvuru</a></li>
+    </ul>
+    <button class="burger" aria-label="Menü"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap heroGrid">
+    <div>
+      <span class="eyebrow">Kuruluş 1994 · Nişantaşı</span>
+      <h1>Yarım asra yaklaşan güven, bir gülüşte</h1>
+      <p class="lead">Zümrüt Ağız ve Diş Sağlığı Merkezi, akademik unvanlı hekim kadrosu ve uluslararası kalite standartlarıyla hizmet veren köklü bir kurumdur.</p>
+      <div class="heroCtas">
+        <a href="#basvuru" class="btn btn-emerald">Başvuru Formu</a>
+        <a href="#hizmetler" class="btn btn-line">Tedavileri İnceleyin</a>
+      </div>
+    </div>
+    <div class="credPanel">
+      <div class="credRow"><span class="k">Kuruluş Yılı</span><span class="v">1994</span></div>
+      <div class="credRow"><span class="k">Akademik Unvanlı Hekim</span><span class="v">9</span></div>
+      <div class="credRow"><span class="k">Tamamlanan Tedavi</span><span class="v">48.000+</span></div>
+      <div class="credRow"><span class="k">Uluslararası Hasta Oranı</span><span class="v">%22</span></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="accreditStrip">
+      <div class="accreditRow">
+        <div class="accreditItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2 20 7v10l-8 5-8-5V7Z" stroke="currentColor" stroke-width="1.3"/></svg>Sağlık Bakanlığı Ruhsatlı</div>
+        <div class="accreditItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.3"/></svg>ISO 9001 Kalite Belgesi</div>
+        <div class="accreditItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.3"/></svg>Steril Sterilizasyon Protokolü</div>
+        <div class="accreditItem"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12c2-5 14-5 16 0" stroke="currentColor" stroke-width="1.3"/></svg>Uluslararası Hasta Birimi</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Tedavi Alanlarımız</span>
+      <h2>Akademik titizlikle yürütülen tedaviler</h2>
+    </div>
+    <div class="svcGrid">
+      <div class="svcCard"><h3>İmplantoloji</h3><p>3D tomografi destekli planlama ile tek diş ve tam ağız implant tedavisi.</p></div>
+      <div class="svcCard"><h3>Protetik Diş Tedavisi</h3><p>Zirkonyum ve E-max kaplama ile doğal görünümlü restorasyon.</p></div>
+      <div class="svcCard"><h3>Ortodonti</h3><p>Diş teli ve şeffaf plak tedavisinde kapsamlı takip programı.</p></div>
+      <div class="svcCard"><h3>Endodonti</h3><p>Mikroskop eşliğinde yürütülen kanal tedavisi uygulamaları.</p></div>
+      <div class="svcCard"><h3>Periodontoloji</h3><p>Diş eti hastalıklarının cerrahi ve cerrahi dışı tedavisi.</p></div>
+      <div class="svcCard"><h3>Pedodonti</h3><p>Çocuk hastalar için özel olarak yapılandırılmış tedavi protokolleri.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="uluslararasi" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="sectionHead"><span class="eyebrow">Uluslararası Hasta Hizmetleri</span><h2>Seyahatten tedaviye kesintisiz süreç</h2></div>
+    <div class="intlBand">
+      <div class="intlList">
+        <div class="intlItem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12c2-5 14-5 16 0" stroke="currentColor" stroke-width="1.6"/></svg><div><h3>Çeviri ve Danışmanlık</h3><p>Tedavi süreciniz boyunca tercümanlık ve hasta danışmanı desteği.</p></div></div>
+        <div class="intlItem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/></svg><div><h3>Konaklama Koordinasyonu</h3><p>Anlaşmalı otellerle tedavi süresine uygun konaklama planlaması.</p></div></div>
+        <div class="intlItem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/></svg><div><h3>Havalimanı Transferi</h3><p>Varıştan ayrılışa kadar özel araçla transfer hizmeti.</p></div></div>
+      </div>
+      <div class="intlList">
+        <div class="intlItem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/></svg><div><h3>Tedavi Garanti Belgesi</h3><p>Uygulanan tedaviler için yazılı garanti ve takip programı.</p></div></div>
+        <div class="intlItem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2.8 0-5 1.8-5 4.6 0 2.1.6 3.4 1.1 5 .5 1.7 1 3.6 1.4 6.1.2 1.1 1 1.3 1.4.3.6-1.6 1.1-2.9 2.1-2.9s1.5 1.3 2.1 2.9c.4 1 1.2.8 1.4-.3.4-2.5.9-4.4 1.4-6.1.5-1.6 1.1-2.9 1.1-5C19 4.8 16.8 3 14 3c-.8 0-1.4.2-2 .5-.6-.3-1.2-.5-2-.5Z" stroke="currentColor" stroke-width="1.6"/></svg><div><h3>Uzaktan Ön Değerlendirme</h3><p>Seyahat öncesi dijital görüntüler üzerinden ön konsültasyon.</p></div></div>
+        <div class="intlItem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><div><h3>Sonrası Takip</h3><p>Ülkenize dönüşünüzden sonra dijital kontrol randevuları.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hekimler">
+  <div class="wrap">
+    <div class="sectionHead center"><span class="eyebrow">Hekim Kadrosu</span><h2>Akademik unvanlı uzmanlarımız</h2></div>
+    <div class="docGrid">
+      <div class="docCard"><div class="docPhoto"><img src="../kadin_fotograflari/s12_deniz-sari.jpg" alt="Doç. Dr. Aylin Kerem"></div><h3>Doç. Dr. Aylin Kerem</h3><div class="docRole">Klinik Direktörü · İmplantoloji</div><div class="credList"><span>22 yıllık klinik deneyim</span><span>Marmara Üniversitesi, Doçentlik</span></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../erkek_fotograflari/s10_kaan-baysal.jpg" alt="Prof. Dr. Serhan Ak"></div><h3>Prof. Dr. Serhan Ak</h3><div class="docRole">Protetik Diş Tedavisi</div><div class="credList"><span>18 yıllık akademik kariyer</span><span>İstanbul Üniversitesi, Profesörlük</span></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../erkek_fotograflari/s11_serhan-ak.jpg" alt="Dt. Ömer Faruk Giray"></div><h3>Dt. Ömer Faruk Giray</h3><div class="docRole">Ortodonti Uzmanı</div><div class="credList"><span>Uzmanlık derecesi, Hacettepe Ü.</span><span>900+ ortodontik vaka</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="testiWrap">
+      <p class="quote">"Hem uzaktan değerlendirme sürecinde hem de klinikteki uygulamada akademik titizliği hissettim."</p>
+      <div class="who">R. Hofmann — Uluslararası Hasta</div>
+    </div>
+  </div>
+</section>
+
+<section id="sss" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sectionHead center"><span class="eyebrow">Sıkça Sorulan Sorular</span><h2>Bilgilendirme</h2></div>
+    <div class="faq">
+      <details class="faqItem" open><summary class="faqQ">Hekimlerinizin akademik unvanları nasıl doğrulanabilir? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><p class="faqA">Tüm hekimlerimizin unvan ve uzmanlık bilgileri talebiniz üzerine yazılı olarak paylaşılır.</p></details>
+      <details class="faqItem"><summary class="faqQ">Uluslararası hasta sürecine nasıl başvurabilirim? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><p class="faqA">Başvuru formunu doldurarak dijital görüntülerinizi paylaşabilir, uzaktan ön değerlendirme talep edebilirsiniz.</p></details>
+      <details class="faqItem"><summary class="faqQ">Tedavi garantisi ne kapsıyor? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><p class="faqA">İmplant ve protetik tedavilerde yazılı garanti belgesi ve düzenli kontrol programı sunulur.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="basvuru">
+  <div class="wrap">
+    <div class="sectionHead center"><span class="eyebrow">Başvuru</span><h2>Tedavi başvuru formu</h2></div>
+    <div class="formSection">
+      <div>
+        <h3 style="font-size:1.2rem;font-weight:500">Form nasıl değerlendirilir?</h3>
+        <p style="color:var(--muted);margin-top:14px">Başvurunuz klinik koordinatörümüz tarafından incelenir ve 1 iş günü içinde sizinle iletişime geçilir. Uluslararası hastalarımız için ayrıca ön değerlendirme süreci başlatılır.</p>
+      </div>
+      <form id="zumrutForm">
+        <div class="field"><label for="zName">Ad Soyad</label><input id="zName" required></div>
+        <div class="field"><label for="zPhone">Telefon / E-posta</label><input id="zPhone" required></div>
+        <div class="field"><label for="zDept">İlgilendiğiniz Tedavi Alanı</label>
+          <select id="zDept"><option>İmplantoloji</option><option>Protetik Diş Tedavisi</option><option>Ortodonti</option><option>Genel Değerlendirme</option></select>
+        </div>
+        <button class="btn btn-emerald" type="submit" style="width:100%;justify-content:center">Başvuru Formunu Gönder</button>
+        <div id="zSuccess" class="successMsg" hidden>Başvurunuz alınmıştır. Klinik koordinatörümüz sizinle iletişime geçecektir.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footGrid">
+      <div>
+        <h4>Zümrüt Ağız ve Diş Sağlığı Merkezi</h4>
+        <p>Vali Konağı Cad. No:62, Nişantaşı / İstanbul</p>
+        <p>Telefon: <span id="phoneText">0212 231 48 60</span><button class="copyBtn" onclick="copyText('phoneText','cp1')">Kopyala</button></p>
+        <p>E-posta: <span id="mailText">basvuru@zumrutdis.com.tr</span><button class="copyBtn" onclick="copyText('mailText','cp2')">Kopyala</button></p>
+        <p id="cp1" style="color:var(--emerald);font-size:.78rem" hidden>Telefon kopyalandı.</p>
+        <p id="cp2" style="color:var(--emerald);font-size:.78rem" hidden>E-posta kopyalandı.</p>
+      </div>
+      <div>
+        <h4>Çalışma Saatleri</h4>
+        <table class="hoursTable">
+          <tr><td>Pzt–Cuma</td><td>09:00 – 18:30</td></tr>
+          <tr><td>Cumartesi</td><td>10:00 – 15:00</td></tr>
+          <tr><td>Pazar</td><td>Kapalı</td></tr>
+        </table>
+      </div>
+      <div>
+        <h4>Kurumsal</h4>
+        <a href="#uluslararasi">Uluslararası Hasta</a>
+        <a href="#hekimler">Hekim Kadrosu</a>
+        <a href="#sss">Sıkça Sorulanlar</a>
+      </div>
+    </div>
+    <div class="finePrint"><span>© 2026 Zümrüt Ağız ve Diş Sağlığı Merkezi</span><span>Bu site örnek portfolyo amaçlı hazırlanmıştır.</span></div>
+  </div>
+</footer>
+
+<a class="waBtn" href="https://wa.me/905322314860" target="_blank" rel="noopener" aria-label="WhatsApp'tan yazın">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.1 1.7 2.6 4.1 3.6 2.4 1 2.4.7 2.8.6.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.1-.5-.2Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script>
+document.getElementById('zumrutForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('zSuccess').hidden = false;
+  this.reset();
+});
+function copyText(id,msgId){
+  var text = document.getElementById(id).textContent;
+  function show(){ var m=document.getElementById(msgId); m.hidden=false; setTimeout(function(){m.hidden=true;},2200); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(show).catch(show); } else { show(); }
+}
+var burger = document.querySelector('.burger');
+var navlinks = document.querySelector('.navlinks');
+burger.addEventListener('click', function(){
+  var showing = navlinks.style.display === 'flex';
+  navlinks.style.display = showing ? 'none' : 'flex';
+  navlinks.style.flexDirection='column';
+  navlinks.style.position='absolute';
+  navlinks.style.top='66px';
+  navlinks.style.right='20px';
+  navlinks.style.background='var(--surface)';
+  navlinks.style.border='1px solid var(--border)';
+  navlinks.style.padding='16px 22px';
+  navlinks.style.boxShadow='var(--shadow)';
+});
+</script>
+
+</body></html>

@@ -1,0 +1,347 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Nova Dental Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#FAFAF7; --surface:#FFFFFF; --surface-2:#F0EFE9;
+  --ink:#14151A; --muted:#6B6D77; --border:#E4E2D9;
+  --pink:#FF3D7F; --indigo:#4B3FFF; --yellow:#FFD23F;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121218; --surface:#1A1A22; --surface-2:#20202A;
+    --ink:#F2F1EC; --muted:#A3A3AD; --border:#303040;
+    --pink:#FF6B9D; --indigo:#8C83FF; --yellow:#FFDE70;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121218; --surface:#1A1A22; --surface-2:#20202A;
+  --ink:#F2F1EC; --muted:#A3A3AD; --border:#303040;
+  --pink:#FF6B9D; --indigo:#8C83FF; --yellow:#FFDE70;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,sans-serif;line-height:1.6;margin:0;overflow-x:hidden}
+h1,h2,h3{font-family:"Unbounded",sans-serif;text-wrap:balance;margin:0;color:var(--ink)}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);font-weight:800}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:14px 26px;font-weight:700;font-size:.92rem;border:2px solid var(--ink);cursor:pointer;font-family:"Manrope",sans-serif}
+.btn-solid{background:var(--ink);color:var(--bg)}
+.btn-outline{background:transparent;color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:2px solid var(--indigo);outline-offset:3px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:2px solid var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:16px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Unbounded",sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:-.01em}
+.navlinks{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.9rem;font-weight:700}
+.navlinks a{position:relative;padding-bottom:4px}
+.navlinks a:after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--pink);transition:width .2s}
+.navlinks a:hover:after{width:100%}
+.burger{display:none;background:none;border:2px solid var(--ink);border-radius:8px;padding:8px;cursor:pointer}
+@media (max-width:900px){.navlinks{display:none}.burger{display:inline-flex}}
+
+.hero{padding-block:50px 0;position:relative}
+.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:stretch}
+@media (max-width:900px){.heroGrid{grid-template-columns:1fr}}
+.heroLeft{display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.01em}
+.hero h1 .hl{background:var(--yellow);padding-inline:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero p.lead{color:var(--muted);font-size:1.05rem;max-width:40ch;margin-top:18px;font-weight:500}
+.heroCtas{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.heroPanel{background:var(--ink);border-radius:22px;padding:26px;color:var(--bg);display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.swatchRow{display:flex;gap:10px}
+.swatch{flex:1;aspect-ratio:1;border-radius:14px}
+.heroPanel .cap{font-size:.82rem;color:color-mix(in srgb, var(--bg) 70%, transparent);font-weight:600}
+.heroStat{font-family:"Unbounded",sans-serif;font-size:2.2rem;font-weight:800}
+
+.tickerBar{background:var(--ink);color:var(--bg);padding-block:12px;overflow:hidden;margin-top:40px}
+.ticker{display:flex;gap:40px;white-space:nowrap;font-weight:700;font-size:.86rem;text-transform:uppercase;letter-spacing:.06em;animation:tick 24s linear infinite}
+@media (prefers-reduced-motion: reduce){.ticker{animation:none}}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+section{padding-block:70px}
+.sectionHead{max-width:580px;margin-bottom:36px}
+.sectionHead h2{font-size:clamp(1.8rem,3.6vw,2.5rem);margin-top:10px}
+.sectionHead p{color:var(--muted);margin-top:12px;font-weight:500}
+
+.svcGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+@media (max-width:860px){.svcGrid{grid-template-columns:1fr}}
+.svcCard{padding:30px;border:2px solid var(--ink);display:flex;flex-direction:column;gap:12px;min-height:220px;justify-content:space-between}
+.svcNum{font-family:"Unbounded",sans-serif;font-size:.8rem;font-weight:800;color:var(--muted)}
+.svcCard h3{font-size:1.15rem}
+.svcCard p{color:var(--muted);font-size:.88rem;font-weight:500}
+
+.previewBand{background:var(--indigo);border-radius:26px;padding:44px;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+@media (max-width:860px){.previewBand{grid-template-columns:1fr}}
+.previewBand h2{color:#fff}
+.previewBand p{color:rgba(255,255,255,.85);margin-top:12px;font-weight:500}
+.sliderDemo{background:#fff;border-radius:18px;padding:18px;color:var(--ink)}
+.ba-frame{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/10}
+.ba-layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Unbounded",sans-serif;font-weight:700;color:#fff}
+.ba-before{background:repeating-linear-gradient(45deg,#D8D6CC,#D8D6CC 10px,#CFCDC2 10px,#CFCDC2 20px)}
+.ba-before{color:#55544a}
+.ba-after{background:linear-gradient(135deg,var(--pink),var(--indigo));clip-path:inset(0 50% 0 0)}
+.ba-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff}
+.ba-slider{width:100%;margin-top:12px;accent-color:var(--indigo)}
+
+.docStrip{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:860px){.docStrip{grid-template-columns:1fr}}
+.docCard{background:var(--surface);border:2px solid var(--ink);border-radius:18px;padding:22px;position:relative;overflow:hidden}
+.docTag{position:absolute;top:0;right:0;background:var(--yellow);color:#14151A;font-size:.7rem;font-weight:800;padding:5px 12px;border-bottom-left-radius:10px}
+.docPhoto{width:60px;height:60px;border-radius:14px;overflow:hidden;border:2px solid var(--ink);margin-bottom:12px}
+.docPhoto img{width:100%;height:100%;object-fit:cover}
+.docCard h3{font-size:1.1rem;margin-top:10px}
+.docRole{color:var(--pink);font-weight:700;font-size:.82rem;margin-top:4px}
+.docCard p.bio{color:var(--muted);font-size:.86rem;margin-top:10px;font-weight:500}
+
+.statBand2{background:var(--surface-2);border-radius:22px;padding:36px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+@media (max-width:760px){.statBand2{grid-template-columns:repeat(2,1fr)}}
+.statBand2 .n{font-family:"Unbounded",sans-serif;font-size:2rem;font-weight:800;font-variant-numeric:tabular-nums}
+.statBand2 .l{font-size:.8rem;color:var(--muted);font-weight:600;margin-top:4px}
+
+.faq{border-top:2px solid var(--ink);max-width:760px}
+.faqItem{border-bottom:2px solid var(--ink)}
+.faqQ{width:100%;text-align:left;background:none;border:none;padding:20px 4px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:"Unbounded",sans-serif;font-weight:700;color:var(--ink);font-size:1rem}
+.faqQ svg{color:var(--pink);flex:none;transition:transform .2s}
+.faqItem[open] .faqQ svg{transform:rotate(45deg)}
+.faqA{padding:0 4px 20px;color:var(--muted);font-size:.9rem;max-width:62ch;font-weight:500}
+
+.formSection{background:var(--ink);color:var(--bg);border-radius:26px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:34px}
+@media (max-width:860px){.formSection{grid-template-columns:1fr}}
+.formSection h2{color:var(--bg)}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:.76rem;color:color-mix(in srgb, var(--bg) 70%, transparent);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.field input,.field select{border:2px solid color-mix(in srgb, var(--bg) 30%, transparent);background:transparent;color:var(--bg);border-radius:10px;padding:11px 14px;font-family:inherit;font-size:.92rem}
+.field input::placeholder{color:color-mix(in srgb, var(--bg) 50%, transparent)}
+.successMsg{background:var(--pink);color:#fff;border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:12px;font-weight:700}
+
+footer{padding-block:44px 26px;border-top:2px solid var(--ink)}
+.footGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+@media (max-width:760px){.footGrid{grid-template-columns:1fr}}
+.footGrid h4{font-family:"Unbounded",sans-serif;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+.footGrid p,.footGrid a{display:block;font-size:.9rem;color:var(--ink);text-decoration:none;margin-bottom:8px;font-weight:600}
+.copyBtn{font-size:.76rem;color:var(--pink);background:none;border:2px solid var(--ink);border-radius:6px;padding:3px 9px;margin-left:8px;cursor:pointer;font-weight:700}
+.hoursTable td{padding:3px 0;font-size:.88rem;font-weight:600}
+.hoursTable td:first-child{color:var(--muted);padding-right:14px}
+.finePrint{margin-top:26px;padding-top:18px;border-top:2px solid var(--ink);font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-weight:600}
+
+.waBtn{position:fixed;bottom:22px;right:22px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.4);z-index:50;border:2px solid var(--ink)}
+</style>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="var(--pink)"/><path d="M8 13c.8 1.5 2.3 2.4 4 2.4s3.2-.9 4-2.4" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="8.5" cy="9" r="1.3" fill="#fff"/><circle cx="15.5" cy="9" r="1.3" fill="#fff"/></svg>
+      Nova Dental Studio
+    </div>
+    <ul class="navlinks">
+      <li><a href="#hizmetler">Tedaviler</a></li>
+      <li><a href="#onsonra">Dönüşümler</a></li>
+      <li><a href="#ekip">Ekip</a></li>
+      <li><a href="#sss">SSS</a></li>
+      <li><a href="#randevu">Randevu</a></li>
+    </ul>
+    <button class="burger" aria-label="Menü"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap heroGrid">
+    <div class="heroLeft">
+      <span class="eyebrow">Karaköy · Diş Estetiği Stüdyosu</span>
+      <h1>Gülüşünü <span class="hl">yeniden tasarla.</span></h1>
+      <p class="lead">Invisalign, zirkon kaplama ve dijital gülüş tasarımına odaklı, genç ve dinamik bir diş kliniği deneyimi.</p>
+      <div class="heroCtas">
+        <a href="#randevu" class="btn btn-solid">Randevunu Ayarla</a>
+        <a href="#onsonra" class="btn btn-outline">Dönüşümleri Gör</a>
+      </div>
+    </div>
+    <div class="heroPanel">
+      <div>
+        <div class="heroStat">4.300+</div>
+        <div class="cap">tamamlanan gülüş dönüşümü</div>
+      </div>
+      <div class="swatchRow">
+        <div class="swatch" style="background:var(--pink)"></div>
+        <div class="swatch" style="background:var(--indigo)"></div>
+        <div class="swatch" style="background:var(--yellow)"></div>
+      </div>
+      <p class="cap">Her plan, yüz hattına özel renk ve form analiziyle oluşturulur.</p>
+    </div>
+  </div>
+  <div class="tickerBar">
+    <div class="ticker">
+      <span>INVISALIGN</span><span>•</span><span>ZİRKON KAPLAMA</span><span>•</span><span>DİJİTAL GÜLÜŞ TASARIMI</span><span>•</span><span>LAZER BEYAZLATMA</span><span>•</span>
+      <span>INVISALIGN</span><span>•</span><span>ZİRKON KAPLAMA</span><span>•</span><span>DİJİTAL GÜLÜŞ TASARIMI</span><span>•</span><span>LAZER BEYAZLATMA</span><span>•</span>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Stüdyo Menüsü</span>
+      <h2>Seç, planla, dönüştür</h2>
+    </div>
+    <div class="svcGrid">
+      <div class="svcCard"><div class="svcNum">01</div><h3>Invisalign Şeffaf Plak</h3><p>Görünmez, çıkarılabilir diş düzeltme sistemi.</p></div>
+      <div class="svcCard"><div class="svcNum">02</div><h3>Zirkon / E-Max Kaplama</h3><p>Doğal görünümlü, uzun ömürlü estetik kaplama.</p></div>
+      <div class="svcCard"><div class="svcNum">03</div><h3>Dijital Gülüş Tasarımı</h3><p>Tedavi öncesi sonucu 3D simülasyonla görme.</p></div>
+      <div class="svcCard"><div class="svcNum">04</div><h3>Lazer Beyazlatma</h3><p>Tek seansta belirgin ton açılması.</p></div>
+      <div class="svcCard"><div class="svcNum">05</div><h3>Diş Kaplama Tamiri</h3><p>Kırılan veya aşınan kaplamaların onarımı.</p></div>
+      <div class="svcCard"><div class="svcNum">06</div><h3>Genel Kontrol</h3><p>Dijital röntgen destekli yıllık diş sağlığı taraması.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="onsonra" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="previewBand">
+      <div>
+        <span class="eyebrow" style="color:var(--yellow)">Önce / Sonra</span>
+        <h2>Sonucu görmeden karar vermeyin</h2>
+        <p>Kaydırıcıyı hareket ettirerek örnek bir gülüş dönüşümünü karşılaştırın. Her hasta için bu analiz, konsültasyonda canlı olarak yapılır.</p>
+      </div>
+      <div class="sliderDemo">
+        <div class="ba-frame">
+          <div class="ba-layer ba-before">ÖNCE</div>
+          <div class="ba-layer ba-after" id="baAfter">SONRA</div>
+          <div class="ba-handle" id="baHandle"></div>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="ba-slider" id="baRange" aria-label="Önce sonra karşılaştırma">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ekip">
+  <div class="wrap">
+    <div class="sectionHead"><span class="eyebrow">Stüdyo Ekibi</span><h2>Tasarımın arkasındaki hekimler</h2></div>
+    <div class="docStrip">
+      <div class="docCard"><div class="docTag">Kurucu</div><div class="docPhoto"><img src="../kadin_fotograflari/s05_ece-yalman.jpg" alt="Dt. Ece Yalman"></div><h3>Dt. Ece Yalman</h3><div class="docRole">Dijital Gülüş Tasarımı</div><p class="bio">Estetik diş hekimliğinde 9 yıllık deneyim, 1.800+ dönüşüm.</p></div>
+      <div class="docCard"><div class="docTag">Invisalign Sertifikalı</div><div class="docPhoto"><img src="../erkek_fotograflari/s11_serhan-ak.jpg" alt="Dt. Bora Tekin"></div><h3>Dt. Bora Tekin</h3><div class="docRole">Ortodonti</div><p class="bio">Şeffaf plak tedavisinde uzmanlaşmış, 7 yıllık hekim.</p></div>
+      <div class="docCard"><div class="docTag">Lazer Uzmanı</div><div class="docPhoto"><img src="../kadin_fotograflari/s05_lara-vural.jpg" alt="Dt. Lara Vural"></div><h3>Dt. Lara Vural</h3><div class="docRole">Kozmetik Diş Hekimliği</div><p class="bio">Lazer beyazlatma ve kaplama tedavilerinde 6 yıllık deneyim.</p></div>
+    </div>
+    <div class="statBand2" style="margin-top:28px">
+      <div><div class="n">4.300+</div><div class="l">tamamlanan tedavi</div></div>
+      <div><div class="n">4.9/5</div><div class="l">ortalama puan</div></div>
+      <div><div class="n">48s</div><div class="l">kaplama teslim süresi</div></div>
+      <div><div class="n">3</div><div class="l">uzman hekim</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sss" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sectionHead"><span class="eyebrow">Sık Sorulanlar</span><h2>Merak ettikleriniz</h2></div>
+    <div class="faq">
+      <details class="faqItem" open><summary class="faqQ">Dijital gülüş tasarımı nasıl çalışır? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></summary><p class="faqA">Ağzınızın dijital taraması alınır, yüz hattınıza uygun gülüş simülasyonu konsültasyonda birlikte incelenir.</p></details>
+      <details class="faqItem"><summary class="faqQ">Invisalign tedavisi ne kadar sürer? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></summary><p class="faqA">Vakaya göre 6 ile 14 ay arasında değişir, süreç 3D simülasyonla önceden gösterilir.</p></details>
+      <details class="faqItem"><summary class="faqQ">Kaplama tedavisi kaç seans sürer? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></summary><p class="faqA">Genellikle 2 seansta tamamlanır; ölçü alımı ve kaplama yerleştirmesi ayrı günlerde yapılır.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="randevu">
+  <div class="wrap">
+    <div class="formSection">
+      <div>
+        <span class="eyebrow" style="color:var(--yellow)">Randevu</span>
+        <h2 style="margin-top:8px">Dönüşümüne bugün başla</h2>
+        <p style="color:color-mix(in srgb, var(--bg) 75%, transparent);margin-top:12px;font-weight:500">Formu doldur, 24 saat içinde WhatsApp veya telefonla seninle iletişime geçelim.</p>
+      </div>
+      <form id="novaForm">
+        <div class="field"><label for="nName">İsim</label><input id="nName" required placeholder="Adınız"></div>
+        <div class="field"><label for="nPhone">Telefon</label><input id="nPhone" type="tel" required placeholder="05xx xxx xx xx"></div>
+        <div class="field"><label for="nTreat">İlgi Alanı</label>
+          <select id="nTreat">
+            <option>Invisalign Şeffaf Plak</option>
+            <option>Zirkon / E-Max Kaplama</option>
+            <option>Lazer Beyazlatma</option>
+            <option>Genel Kontrol</option>
+          </select>
+        </div>
+        <button class="btn btn-solid" type="submit" style="width:100%;justify-content:center;border-color:var(--bg)">Formu Gönder</button>
+        <div id="nSuccess" class="successMsg" hidden>Talebin alındı, ekibimiz seninle en kısa sürede iletişime geçecek.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footGrid">
+      <div>
+        <h4>Nova Dental Studio</h4>
+        <p>Kemankeş Cad. No:19, Karaköy / İstanbul</p>
+        <p>Telefon: <span id="phoneText">0212 290 44 20</span><button class="copyBtn" onclick="copyText('phoneText','cp1')">Kopyala</button></p>
+        <p>E-posta: <span id="mailText">hello@novadental.studio</span><button class="copyBtn" onclick="copyText('mailText','cp2')">Kopyala</button></p>
+        <p id="cp1" style="color:var(--pink);font-size:.78rem" hidden>Telefon kopyalandı.</p>
+        <p id="cp2" style="color:var(--pink);font-size:.78rem" hidden>E-posta kopyalandı.</p>
+      </div>
+      <div>
+        <h4>Çalışma Saatleri</h4>
+        <table class="hoursTable">
+          <tr><td>Pzt–Cuma</td><td>10:00 – 20:00</td></tr>
+          <tr><td>Cumartesi</td><td>11:00 – 18:00</td></tr>
+          <tr><td>Pazar</td><td>Kapalı</td></tr>
+        </table>
+      </div>
+      <div>
+        <h4>Keşfet</h4>
+        <a href="#hizmetler">Tedaviler</a>
+        <a href="#onsonra">Dönüşümler</a>
+        <a href="#ekip">Ekip</a>
+        <a href="#sss">SSS</a>
+      </div>
+    </div>
+    <div class="finePrint"><span>© 2026 Nova Dental Studio</span><span>Bu site örnek portfolyo amaçlı hazırlanmıştır.</span></div>
+  </div>
+</footer>
+
+<a class="waBtn" href="https://wa.me/905322904420" target="_blank" rel="noopener" aria-label="WhatsApp'tan yazın">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.1 1.7 2.6 4.1 3.6 2.4 1 2.4.7 2.8.6.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.1-.5-.2Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script>
+document.getElementById('novaForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('nSuccess').hidden = false;
+  this.reset();
+});
+function copyText(id,msgId){
+  var text = document.getElementById(id).textContent;
+  function show(){ var m=document.getElementById(msgId); m.hidden=false; setTimeout(function(){m.hidden=true;},2200); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(show).catch(show); } else { show(); }
+}
+var baRange = document.getElementById('baRange');
+var baAfter = document.getElementById('baAfter');
+var baHandle = document.getElementById('baHandle');
+baRange.addEventListener('input', function(){
+  baAfter.style.clipPath = 'inset(0 ' + (100-this.value) + '% 0 0)';
+  baHandle.style.left = this.value + '%';
+});
+var burger = document.querySelector('.burger');
+var navlinks = document.querySelector('.navlinks');
+burger.addEventListener('click', function(){
+  var showing = navlinks.style.display === 'flex';
+  navlinks.style.display = showing ? 'none' : 'flex';
+  navlinks.style.flexDirection='column';
+  navlinks.style.position='absolute';
+  navlinks.style.top='62px';
+  navlinks.style.right='20px';
+  navlinks.style.background='var(--surface)';
+  navlinks.style.border='2px solid var(--ink)';
+  navlinks.style.borderRadius='14px';
+  navlinks.style.padding='16px 20px';
+});
+</script>
+
+</body></html>

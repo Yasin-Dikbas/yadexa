@@ -1,0 +1,362 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Yaşam Diş Polikliniği</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F5F7FA; --surface:#FFFFFF; --surface-2:#EAF1F8;
+  --ink:#1D2733; --muted:#5A6A7A; --border:#DCE4EC;
+  --primary:#0B3D91; --primary-ink:#FFFFFF; --sky:#2E9CCA; --success:#1E8E6B; --warn:#C97A2B;
+  --shadow:0 12px 28px -14px rgba(11,61,145,.25);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E151D; --surface:#141D28; --surface-2:#192332;
+    --ink:#E8EEF5; --muted:#9AAABB; --border:#273344;
+    --primary:#5B8FE0; --primary-ink:#06101C; --sky:#5FC2E8; --success:#4FC79A; --warn:#E3A25B;
+    --shadow:0 12px 28px -14px rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E151D; --surface:#141D28; --surface-2:#192332;
+  --ink:#E8EEF5; --muted:#9AAABB; --border:#273344;
+  --primary:#5B8FE0; --primary-ink:#06101C; --sky:#5FC2E8; --success:#4FC79A; --warn:#E3A25B;
+  --shadow:0 12px 28px -14px rgba(0,0,0,.6);
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.6;margin:0}
+h1,h2,h3{font-family:"Libre Franklin",system-ui,sans-serif;font-weight:800;text-wrap:balance;margin:0;color:var(--ink)}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:13px 24px;font-weight:700;font-size:.9rem;border:1px solid transparent;cursor:pointer;font-family:"Libre Franklin",sans-serif}
+.btn-primary{background:var(--primary);color:var(--primary-ink)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+
+.topbar{background:var(--primary);color:var(--primary-ink);font-size:.78rem;padding-block:7px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar a{text-decoration:none;opacity:.95}
+.topbar .sep{opacity:.5;margin-inline:6px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb, var(--surface) 94%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:14px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Libre Franklin",sans-serif;font-weight:800;font-size:1.2rem}
+.navlinks{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:.9rem;font-weight:600;color:var(--muted)}
+.navlinks a:hover{color:var(--primary)}
+.burger{display:none;background:none;border:1px solid var(--border);border-radius:8px;padding:8px;cursor:pointer}
+@media (max-width:900px){.navlinks{display:none}.burger{display:inline-flex}}
+
+.hero{padding-block:52px 0}
+.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media (max-width:860px){.heroGrid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2rem,4vw,2.9rem);margin-block:14px 16px}
+.hero p.lead{color:var(--muted);font-size:1.05rem;max-width:40ch}
+.heroCtas{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.trustCard{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+.trustRow{display:flex;align-items:center;gap:12px;padding-block:10px;border-bottom:1px solid var(--border)}
+.trustRow:last-child{border-bottom:none}
+.trustRow svg{color:var(--success);flex:none}
+.trustRow span{font-size:.9rem;font-weight:600}
+
+.statBand{background:var(--primary);color:var(--primary-ink);padding-block:34px;margin-top:40px}
+.statGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+@media (max-width:760px){.statGrid{grid-template-columns:repeat(2,1fr)}}
+.statNum{font-family:"Libre Franklin",sans-serif;font-size:2.1rem;font-weight:800;font-variant-numeric:tabular-nums}
+.statLbl{font-size:.82rem;opacity:.9;margin-top:4px}
+
+section{padding-block:56px}
+.sectionHead{max-width:600px;margin-bottom:34px}
+.sectionHead h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-top:8px}
+.sectionHead p{color:var(--muted);margin-top:10px}
+
+.svcGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:980px){.svcGrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.svcGrid{grid-template-columns:1fr}}
+.svcCard{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--sky);border-radius:10px;padding:20px}
+.svcCard h3{font-size:1rem;font-weight:700}
+.svcCard p{color:var(--muted);font-size:.86rem;margin-top:8px}
+
+.insuranceBand{background:var(--surface-2);border-radius:16px;padding:30px}
+.insRow{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}
+.insChip{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 16px;font-size:.84rem;font-weight:700;color:var(--muted)}
+
+.docGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:980px){.docGrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.docGrid{grid-template-columns:1fr}}
+.docCard{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;text-align:center}
+.docPhoto{aspect-ratio:1/1;background:var(--surface-2);display:flex;align-items:center;justify-content:center;color:var(--primary);overflow:hidden}
+.docPhoto img{width:100%;height:100%;object-fit:cover}
+.docBody{padding:14px}
+.docBody h3{font-size:.96rem}
+.docRole{color:var(--primary);font-size:.78rem;font-weight:700;margin-top:3px}
+.docBranch{color:var(--muted);font-size:.76rem;margin-top:6px}
+
+.blogGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:860px){.blogGrid{grid-template-columns:1fr}}
+.blogCard{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.blogImg{height:120px;background:linear-gradient(135deg,var(--primary),var(--sky))}
+.blogBody{padding:18px}
+.blogTag{color:var(--sky);font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.blogBody h3{font-size:1rem;margin-top:6px}
+.blogBody p{color:var(--muted);font-size:.85rem;margin-top:8px}
+
+.branchGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.branchGrid{grid-template-columns:1fr}}
+.branchCard{border:1px solid var(--border);border-radius:10px;padding:18px;background:var(--surface)}
+.branchCard h3{font-size:.95rem}
+.branchCard p{font-size:.84rem;color:var(--muted);margin-top:6px}
+
+.formSection{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:30px;box-shadow:var(--shadow)}
+@media (max-width:820px){.formSection{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:.78rem;color:var(--muted);font-weight:700}
+.field input,.field select{border:1px solid var(--border);background:var(--surface-2);border-radius:8px;padding:10px 12px;font-family:inherit;font-size:.92rem;color:var(--ink)}
+.successMsg{background:color-mix(in srgb, var(--success) 18%, var(--surface));border:1px solid var(--success);border-radius:10px;padding:12px 14px;font-size:.88rem;margin-top:12px}
+
+.faq{border-top:1px solid var(--border)}
+.faqItem{border-bottom:1px solid var(--border)}
+.faqQ{width:100%;text-align:left;background:none;border:none;padding:18px 4px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:"Libre Franklin",sans-serif;font-weight:700;color:var(--ink);font-size:.96rem}
+.faqQ svg{color:var(--primary);flex:none;transition:transform .2s}
+.faqItem[open] .faqQ svg{transform:rotate(45deg)}
+.faqA{padding:0 4px 18px;color:var(--muted);font-size:.9rem;max-width:68ch}
+
+footer{background:var(--surface-2);border-top:1px solid var(--border);padding-block:40px 24px}
+.footGrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:26px}
+@media (max-width:860px){.footGrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.footGrid{grid-template-columns:1fr}}
+.footGrid h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+.footGrid p,.footGrid a{display:block;font-size:.88rem;color:var(--ink);text-decoration:none;margin-bottom:8px}
+.copyBtn{font-size:.76rem;color:var(--primary);background:none;border:1px solid var(--border);border-radius:6px;padding:3px 8px;margin-left:8px;cursor:pointer}
+.finePrint{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);font-size:.76rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.waBtn{position:fixed;bottom:22px;right:22px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.4);z-index:50}
+</style>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>Acil Diş Hattı: <strong>0850 222 11 00</strong><span class="sep">|</span>3 şube ile hizmetinizdeyiz</div>
+    <div><a href="#iletisim">Şubelerimiz</a><span class="sep">|</span><a href="#randevu">Online Randevu</a></div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" fill="var(--primary)"/><path d="M12 7c-1.8 0-3.2 1.2-3.2 3 0 1.3.4 2.1.7 3.1.3 1 .6 2.2.9 3.8.1.7.6.8.9.2.4-1 .7-1.8 1.3-1.8s.9.8 1.3 1.8c.3.6.8.5.9-.2.3-1.6.6-2.8.9-3.8.3-1 .7-1.8.7-3.1 0-1.8-1.4-3-3.2-3-.5 0-.9.1-1.2.3-.3-.2-.7-.3-1.2-.3Z" fill="#fff"/></svg>
+      Yaşam Diş Polikliniği
+    </div>
+    <ul class="navlinks">
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#sigorta">Sigorta / Anlaşmalar</a></li>
+      <li><a href="#doktorlar">Hekim Kadromuz</a></li>
+      <li><a href="#blog">Sağlık Rehberi</a></li>
+      <li><a href="#iletisim">Şubelerimiz</a></li>
+    </ul>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a href="#randevu" class="btn btn-primary">Online Randevu</a>
+      <button class="burger" aria-label="Menü"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap heroGrid">
+    <div>
+      <span class="eyebrow">1998'den Bugüne · 3 Şube</span>
+      <h1>Her yaştan hastaya, kurumsal güvenle diş sağlığı hizmeti</h1>
+      <p class="lead">Yaşam Diş Polikliniği, geniş hekim kadrosu, özel sağlık sigortası anlaşmaları ve standartlaştırılmış tedavi protokolleriyle ailenizin diş sağlığı ortağıdır.</p>
+      <div class="heroCtas">
+        <a href="#randevu" class="btn btn-primary">Randevu Oluştur</a>
+        <a href="#sigorta" class="btn btn-ghost">Sigorta Anlaşmalarını Gör</a>
+      </div>
+    </div>
+    <div class="trustCard">
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg><span>T.C. Sağlık Bakanlığı ruhsatlı klinik</span></div>
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg><span>ISO 9001 kalite yönetim sertifikası</span></div>
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg><span>12 özel sağlık sigortası ile anlaşmalı</span></div>
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg><span>Merkezi hasta kaydı, 3 şubede geçerli</span></div>
+    </div>
+  </div>
+  <div class="statBand">
+    <div class="wrap statGrid">
+      <div><div class="statNum">27</div><div class="statLbl">yıllık kurum tecrübesi</div></div>
+      <div><div class="statNum">41</div><div class="statLbl">uzman hekim</div></div>
+      <div><div class="statNum">120.000+</div><div class="statLbl">tamamlanan tedavi</div></div>
+      <div><div class="statNum">%97</div><div class="statLbl">hasta memnuniyeti</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Tedavi Birimleri</span>
+      <h2>Tüm diş sağlığı ihtiyaçlarınız için 8 uzmanlık alanı</h2>
+    </div>
+    <div class="svcGrid">
+      <div class="svcCard"><h3>Genel Diş Hekimliği</h3><p>Muayene, dolgu ve koruyucu bakım hizmetleri.</p></div>
+      <div class="svcCard"><h3>Ortodonti</h3><p>Diş teli ve şeffaf plak tedavi planlaması.</p></div>
+      <div class="svcCard"><h3>İmplantoloji</h3><p>Tek diş ve tam ağız implant uygulamaları.</p></div>
+      <div class="svcCard"><h3>Periodontoloji</h3><p>Diş eti hastalıkları tanı ve tedavisi.</p></div>
+      <div class="svcCard"><h3>Endodonti</h3><p>Mikroskop destekli kanal tedavisi.</p></div>
+      <div class="svcCard"><h3>Pedodonti</h3><p>0-12 yaş çocuk diş sağlığı hizmetleri.</p></div>
+      <div class="svcCard"><h3>Ağız ve Çene Cerrahisi</h3><p>Gömülü diş çekimi ve cerrahi işlemler.</p></div>
+      <div class="svcCard"><h3>Estetik Diş Hekimliği</h3><p>Kaplama, laminat ve beyazlatma tedavileri.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sigorta" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="insuranceBand">
+      <span class="eyebrow">Sigorta ve Kurumsal Anlaşmalar</span>
+      <h2 style="margin-top:8px;font-size:1.5rem">Anlaşmalı olduğumuz kurumlar</h2>
+      <p style="color:var(--muted);margin-top:10px">Aşağıdaki sigorta ve kurum anlaşmalarımız kapsamında muayene ve belirli tedavilerde indirimli / karşılıksız hizmet sunuyoruz. Güncel liste için resepsiyonla iletişime geçebilirsiniz.</p>
+      <div class="insRow">
+        <div class="insChip">Allianz Sağlık</div>
+        <div class="insChip">Axa Sigorta</div>
+        <div class="insChip">Anadolu Sigorta</div>
+        <div class="insChip">Groupama</div>
+        <div class="insChip">Kurumsal Anlaşmalar (BES/Özel Şirket)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="doktorlar">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Hekim Kadromuz</span>
+      <h2>41 uzman hekimden bazıları</h2>
+    </div>
+    <div class="docGrid">
+      <div class="docCard"><div class="docPhoto"><img src="../erkek_fotograflari/s15_hakan-sezgin.jpg" alt="Dr. Hakan Erol"></div><div class="docBody"><h3>Dr. Hakan Erol</h3><div class="docRole">İmplantoloji</div><div class="docBranch">Kadıköy Şubesi</div></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../kadin_fotograflari/s11_aylin-kerem.jpg" alt="Dr. Pınar Doğan"></div><div class="docBody"><h3>Dr. Pınar Doğan</h3><div class="docRole">Ortodonti</div><div class="docBranch">Ümraniye Şubesi</div></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../erkek_fotograflari/s04_hakan-erol.jpg" alt="Dr. Burak Şen"></div><div class="docBody"><h3>Dr. Burak Şen</h3><div class="docRole">Ağız ve Çene Cerrahisi</div><div class="docBranch">Maltepe Şubesi</div></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../kadin_fotograflari/s12_deniz-sari.jpg" alt="Dr. Nurcan İpek"></div><div class="docBody"><h3>Dr. Nurcan İpek</h3><div class="docRole">Pedodonti</div><div class="docBranch">Kadıköy Şubesi</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Sağlık Rehberi</span>
+      <h2>Diş sağlığı üzerine güncel bilgiler</h2>
+    </div>
+    <div class="blogGrid">
+      <div class="blogCard"><div class="blogImg"></div><div class="blogBody"><div class="blogTag">Koruyucu Bakım</div><h3>Diş ipi kullanımı neden önemli?</h3><p>Günlük bakım rutininize eklenmesi gereken 3 basit adım.</p></div></div>
+      <div class="blogCard"><div class="blogImg"></div><div class="blogBody"><div class="blogTag">Ortodonti</div><h3>Şeffaf plak mı, diş teli mi?</h3><p>İki tedavi yöntemi arasındaki farkları karşılaştırdık.</p></div></div>
+      <div class="blogCard"><div class="blogImg"></div><div class="blogBody"><div class="blogTag">Çocuk Sağlığı</div><h3>Çocuklarda diş çürüğünü önlemenin yolları</h3><p>Ebeveynler için beslenme ve bakım önerileri.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sss">
+  <div class="wrap">
+    <div class="sectionHead"><span class="eyebrow">Sıkça Sorulanlar</span><h2>Bilgilendirme</h2></div>
+    <div class="faq">
+      <details class="faqItem" open><summary class="faqQ">Hangi şubelere randevu alabilirim? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="faqA">Kadıköy, Ümraniye ve Maltepe şubelerimizin tümüne online randevu formundan ulaşabilirsiniz.</p></details>
+      <details class="faqItem"><summary class="faqQ">Sigortam karşılamıyorsa taksit seçeneği var mı? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="faqA">Tüm büyük kredi kartlarına 12 aya kadar taksit imkânı sunuyoruz.</p></details>
+      <details class="faqItem"><summary class="faqQ">Acil durumlarda hangi hattı aramalıyım? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="faqA">0850 222 11 00 numaralı acil diş hattımız 7/24 aktiftir.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="randevu">
+  <div class="wrap">
+    <div class="sectionHead"><span class="eyebrow">Online Randevu</span><h2>Şubenizi seçin, randevunuzu oluşturun</h2></div>
+    <div class="formSection">
+      <div>
+        <h3 style="font-size:1.2rem">Nasıl çalışır?</h3>
+        <p style="color:var(--muted);margin-top:12px">Formu doldurduğunuzda talebiniz seçtiğiniz şubenin randevu birimine iletilir ve 1 iş günü içinde SMS ile teyit alırsınız.</p>
+        <div class="branchGrid" style="margin-top:20px">
+          <div class="branchCard"><h3>Kadıköy</h3><p>Söğütlüçeşme Cad. No:21</p></div>
+          <div class="branchCard"><h3>Ümraniye</h3><p>Atatürk Mah. No:88</p></div>
+          <div class="branchCard"><h3>Maltepe</h3><p>Bağlarbaşı Cad. No:14</p></div>
+        </div>
+      </div>
+      <form id="corpForm">
+        <div class="field"><label for="yName">Ad Soyad</label><input id="yName" required></div>
+        <div class="field"><label for="yPhone">Telefon</label><input id="yPhone" type="tel" required></div>
+        <div class="field"><label for="yBranch">Şube</label><select id="yBranch"><option>Kadıköy</option><option>Ümraniye</option><option>Maltepe</option></select></div>
+        <div class="field"><label for="yDept">Tedavi Birimi</label>
+          <select id="yDept"><option>Genel Diş Hekimliği</option><option>Ortodonti</option><option>İmplantoloji</option><option>Pedodonti</option><option>Estetik Diş Hekimliği</option></select>
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Randevu Talebini Gönder</button>
+        <div id="ySuccess" class="successMsg" hidden>Randevu talebiniz alındı, şube randevu biriminden size dönüş yapılacaktır.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer id="iletisim">
+  <div class="wrap">
+    <div class="footGrid">
+      <div>
+        <h4>Yaşam Diş Polikliniği</h4>
+        <p>Genel Müdürlük: Söğütlüçeşme Cad. No:21, Kadıköy / İstanbul</p>
+        <p>Çağrı Merkezi: <span id="phoneText">0850 222 11 00</span><button class="copyBtn" onclick="copyText('phoneText','cp1')">Kopyala</button></p>
+        <p>E-posta: <span id="mailText">info@yasamdis.com.tr</span><button class="copyBtn" onclick="copyText('mailText','cp2')">Kopyala</button></p>
+        <p id="cp1" style="color:var(--success);font-size:.78rem" hidden>Telefon kopyalandı.</p>
+        <p id="cp2" style="color:var(--success);font-size:.78rem" hidden>E-posta kopyalandı.</p>
+      </div>
+      <div>
+        <h4>Şubeler</h4>
+        <p>Kadıköy</p><p>Ümraniye</p><p>Maltepe</p>
+      </div>
+      <div>
+        <h4>Kurumsal</h4>
+        <a href="#sigorta">Sigorta Anlaşmaları</a>
+        <a href="#doktorlar">Hekim Kadromuz</a>
+        <a href="#blog">Sağlık Rehberi</a>
+      </div>
+      <div>
+        <h4>Hızlı Erişim</h4>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#randevu">Online Randevu</a>
+        <a href="#sss">Sıkça Sorulanlar</a>
+      </div>
+    </div>
+    <div class="finePrint"><span>© 2026 Yaşam Diş Polikliniği · Tüm hakları saklıdır.</span><span>Bu site örnek portfolyo amaçlı hazırlanmıştır.</span></div>
+  </div>
+</footer>
+
+<a class="waBtn" href="https://wa.me/905322221100" target="_blank" rel="noopener" aria-label="WhatsApp'tan yazın">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.1 1.7 2.6 4.1 3.6 2.4 1 2.4.7 2.8.6.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.1-.5-.2Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script>
+document.getElementById('corpForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('ySuccess').hidden = false;
+  this.reset();
+});
+function copyText(id,msgId){
+  var text = document.getElementById(id).textContent;
+  function show(){ var m=document.getElementById(msgId); m.hidden=false; setTimeout(function(){m.hidden=true;},2200); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(show).catch(show); } else { show(); }
+}
+var burger = document.querySelector('.burger');
+var navlinks = document.querySelector('.navlinks');
+burger.addEventListener('click', function(){
+  var showing = navlinks.style.display === 'flex';
+  navlinks.style.display = showing ? 'none' : 'flex';
+  navlinks.style.flexDirection='column';
+  navlinks.style.position='absolute';
+  navlinks.style.top='58px';
+  navlinks.style.right='20px';
+  navlinks.style.background='var(--surface)';
+  navlinks.style.border='1px solid var(--border)';
+  navlinks.style.borderRadius='10px';
+  navlinks.style.padding='14px 18px';
+});
+</script>
+
+</body></html>

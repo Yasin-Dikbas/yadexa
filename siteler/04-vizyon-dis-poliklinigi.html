@@ -1,0 +1,327 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Vizyon Diş Polikliniği</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;800&family=Red+Hat+Text:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F4F6F9; --surface:#FFFFFF; --surface-2:#E9EEF3;
+  --ink:#101826; --muted:#5B6672; --border:#DCE2E8;
+  --navy:#0F2A52; --navy-ink:#FFFFFF; --teal:#0E7C86; --steel:#4C6B8A;
+  --shadow:0 16px 36px -18px rgba(15,42,82,.2);
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:"Red Hat Text",system-ui,sans-serif;line-height:1.6;margin:0}
+h1,h2,h3{font-family:"Red Hat Display",system-ui,sans-serif;font-weight:700;text-wrap:balance;margin:0;color:var(--ink)}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:6px;padding:13px 24px;font-weight:700;font-size:.9rem;border:1px solid transparent;cursor:pointer;font-family:"Red Hat Display",sans-serif}
+.btn-navy{background:var(--navy);color:var(--navy-ink)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+.topbar{background:var(--navy);color:#fff;font-size:.78rem;padding-block:7px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar .sep{opacity:.5;margin-inline:6px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:color-mix(in srgb, var(--surface) 94%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding-block:14px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Red Hat Display",sans-serif;font-weight:800;font-size:1.15rem}
+.navlinks{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:.88rem;font-weight:600;color:var(--muted)}
+.navlinks a:hover{color:var(--teal)}
+.burger{display:none;background:none;border:1px solid var(--border);border-radius:6px;padding:8px;cursor:pointer}
+@media (max-width:920px){.navlinks{display:none}.burger{display:inline-flex}}
+
+.hero{padding-block:50px 0}
+.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media (max-width:860px){.heroGrid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2rem,4vw,2.9rem)}
+.hero p.lead{color:var(--muted);font-size:1.04rem;max-width:42ch;margin-top:16px}
+.heroCtas{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.trustCard{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;box-shadow:var(--shadow)}
+.trustRow{display:flex;align-items:center;gap:12px;padding-block:11px;border-bottom:1px solid var(--border)}
+.trustRow:last-child{border-bottom:none}
+.trustRow svg{color:var(--teal);flex:none}
+.trustRow span{font-size:.9rem;font-weight:600}
+
+.statBand{background:var(--navy);color:#fff;padding-block:32px;margin-top:40px}
+.statGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+@media (max-width:760px){.statGrid{grid-template-columns:repeat(2,1fr)}}
+.statNum{font-family:"Red Hat Display",sans-serif;font-size:2rem;font-weight:800;font-variant-numeric:tabular-nums}
+.statLbl{font-size:.8rem;opacity:.85;margin-top:4px}
+
+section{padding-block:56px}
+.sectionHead{max-width:600px;margin-bottom:34px}
+.sectionHead h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-top:8px}
+.sectionHead p{color:var(--muted);margin-top:10px}
+
+.deptGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:980px){.deptGrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.deptGrid{grid-template-columns:1fr}}
+.deptCard{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:22px}
+.deptCard h3{font-size:1rem}
+.deptChief{color:var(--teal);font-size:.78rem;font-weight:700;margin-top:8px}
+.deptCard p{color:var(--muted);font-size:.86rem;margin-top:8px}
+
+.pressStrip{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding-block:22px}
+.pressRow{display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;color:var(--muted);font-weight:700;font-size:.9rem;letter-spacing:.03em}
+
+.portalBand{background:var(--navy);color:#fff;border-radius:16px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+@media (max-width:860px){.portalBand{grid-template-columns:1fr}}
+.portalBand h2{color:#fff}
+.portalBand p{color:rgba(255,255,255,.82);margin-top:12px}
+.portalMock{background:#fff;border-radius:10px;padding:22px;color:var(--ink)}
+.portalRow{display:flex;justify-content:space-between;padding-block:10px;border-bottom:1px solid var(--border);font-size:.86rem}
+.portalRow:last-child{border-bottom:none}
+.portalRow .status{color:var(--teal);font-weight:700}
+
+.docGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:980px){.docGrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.docGrid{grid-template-columns:1fr}}
+.docCard{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;text-align:center}
+.docPhoto{aspect-ratio:1/1;background:var(--surface-2);display:flex;align-items:center;justify-content:center;color:var(--navy);overflow:hidden}
+.docPhoto img{width:100%;height:100%;object-fit:cover}
+.docBody{padding:14px}
+.docBody h3{font-size:.94rem}
+.docRole{color:var(--teal);font-size:.76rem;font-weight:700;margin-top:3px}
+
+.faq{border-top:1px solid var(--border)}
+.faqItem{border-bottom:1px solid var(--border)}
+.faqQ{width:100%;text-align:left;background:none;border:none;padding:18px 4px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:"Red Hat Display",sans-serif;font-weight:700;color:var(--ink);font-size:.96rem}
+.faqQ svg{color:var(--navy);flex:none;transition:transform .2s}
+.faqItem[open] .faqQ svg{transform:rotate(45deg)}
+.faqA{padding:0 4px 18px;color:var(--muted);font-size:.9rem;max-width:68ch}
+
+.formSection{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:30px;box-shadow:var(--shadow)}
+@media (max-width:820px){.formSection{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:.78rem;color:var(--muted);font-weight:700}
+.field input,.field select{border:1px solid var(--border);background:var(--surface-2);border-radius:6px;padding:10px 12px;font-family:inherit;font-size:.92rem;color:var(--ink)}
+.successMsg{background:color-mix(in srgb, var(--teal) 16%, var(--surface));border:1px solid var(--teal);border-radius:8px;padding:12px 14px;font-size:.88rem;margin-top:12px}
+
+footer{background:var(--surface-2);border-top:1px solid var(--border);padding-block:40px 24px}
+.footGrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:26px}
+@media (max-width:860px){.footGrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.footGrid{grid-template-columns:1fr}}
+.footGrid h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+.footGrid p,.footGrid a{display:block;font-size:.88rem;color:var(--ink);text-decoration:none;margin-bottom:8px}
+.copyBtn{font-size:.76rem;color:var(--navy);background:none;border:1px solid var(--border);border-radius:6px;padding:3px 8px;margin-left:8px;cursor:pointer}
+.finePrint{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);font-size:.76rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.waBtn{position:fixed;bottom:22px;right:22px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(0,0,0,.3);z-index:50}
+</style>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>Çağrı Merkezi: <strong>0850 200 44 00</strong><span class="sep">|</span>5 şube ile hizmetinizdeyiz</div>
+    <div><a href="#basvuru">Online Başvuru</a><span class="sep">|</span><a href="#iletisim">Şubelerimiz</a></div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--navy)" stroke-width="1.6"/><path d="M8 13c.8 1.5 2.3 2.4 4 2.4s3.2-.9 4-2.4" stroke="var(--teal)" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Vizyon Diş Polikliniği
+    </div>
+    <ul class="navlinks">
+      <li><a href="#bolumler">Bölümler</a></li>
+      <li><a href="#basari">Araştırma</a></li>
+      <li><a href="#hekimler">Hekim Kadrosu</a></li>
+      <li><a href="#sss">SSS</a></li>
+    </ul>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a href="#basvuru" class="btn btn-navy">Online Başvuru</a>
+      <button class="burger" aria-label="Menü"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap heroGrid">
+    <div>
+      <span class="eyebrow">2004'ten Bugüne · 5 Şube · Akredite Klinik</span>
+      <h1>Diş sağlığında kurumsal standart, ölçülebilir sonuç</h1>
+      <p class="lead">Vizyon Diş Polikliniği, 8 uzmanlık bölümü ve merkezi hasta kayıt sistemiyle şeffaf, tutarlı ve denetlenebilir bir tedavi deneyimi sunar.</p>
+      <div class="heroCtas">
+        <a href="#basvuru" class="btn btn-navy">Online Başvuru</a>
+        <a href="#bolumler" class="btn btn-ghost">Bölümleri İnceleyin</a>
+      </div>
+    </div>
+    <div class="trustCard">
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg><span>T.C. Sağlık Bakanlığı ruhsatlı poliklinik</span></div>
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg><span>ISO 9001 ve ISO 27001 belgeli</span></div>
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg><span>Merkezi elektronik hasta kaydı</span></div>
+      <div class="trustRow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/></svg><span>Bağımsız denetim raporları yayımlanır</span></div>
+    </div>
+  </div>
+  <div class="statBand">
+    <div class="wrap statGrid">
+      <div><div class="statNum">22</div><div class="statLbl">yıllık kurumsal geçmiş</div></div>
+      <div><div class="statNum">53</div><div class="statLbl">uzman hekim</div></div>
+      <div><div class="statNum">210.000+</div><div class="statLbl">tamamlanan tedavi</div></div>
+      <div><div class="statNum">%96</div><div class="statLbl">hasta memnuniyeti</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="bolumler">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Uzmanlık Bölümleri</span>
+      <h2>8 bölüm, tek merkezi kayıt sistemi</h2>
+    </div>
+    <div class="deptGrid">
+      <div class="deptCard"><h3>Ortodonti Bölümü</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Deniz Sarı</div><p>Diş teli ve şeffaf plak tedavi planlaması.</p></div>
+      <div class="deptCard"><h3>İmplantoloji Bölümü</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Barış Ekin</div><p>Tek diş ve tam ağız implant uygulamaları.</p></div>
+      <div class="deptCard"><h3>Periodontoloji Bölümü</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Elvan Kaya</div><p>Diş eti hastalıkları tanı ve tedavisi.</p></div>
+      <div class="deptCard"><h3>Endodonti Bölümü</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Mert Us</div><p>Mikroskop destekli kanal tedavisi.</p></div>
+      <div class="deptCard"><h3>Pedodonti Bölümü</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Sinem Demir</div><p>0-12 yaş çocuk diş sağlığı hizmetleri.</p></div>
+      <div class="deptCard"><h3>Ağız Cerrahisi Bölümü</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Tuna Erol</div><p>Gömülü diş çekimi ve cerrahi işlemler.</p></div>
+      <div class="deptCard"><h3>Estetik Diş Hekimliği</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Pelin Oz</div><p>Kaplama, laminat ve beyazlatma tedavileri.</p></div>
+      <div class="deptCard"><h3>Genel Diş Hekimliği</h3><div class="deptChief">Bölüm Sorumlusu: Dt. Kerem Alp</div><p>Muayene, dolgu ve koruyucu bakım.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="basari" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="pressStrip">
+      <span class="eyebrow" style="display:block;text-align:center;margin-bottom:14px">Basında Vizyon</span>
+      <div class="pressRow">
+        <span>SAĞLIK GÜNCESİ</span><span>DİŞ HEKİMLİĞİ DERGİSİ</span><span>KLİNİK HABER</span><span>SEKTÖR BÜLTENİ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="portalBand">
+      <div>
+        <span class="eyebrow" style="color:#8FD6DC">Hasta Portalı</span>
+        <h2 style="margin-top:8px;font-size:1.5rem">Tedavi sürecinizi dijital olarak takip edin</h2>
+        <p>Randevu geçmişiniz, tedavi raporlarınız ve ödeme planınız hasta portalı üzerinden görüntülenebilir.</p>
+      </div>
+      <div class="portalMock">
+        <div class="portalRow"><span>Son Randevu</span><span class="status">Tamamlandı</span></div>
+        <div class="portalRow"><span>Tedavi Raporu</span><span class="status">Hazır</span></div>
+        <div class="portalRow"><span>Sonraki Kontrol</span><span>14 Kasım 2026</span></div>
+        <div class="portalRow"><span>Ödeme Planı</span><span>3/6 Taksit</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hekimler">
+  <div class="wrap">
+    <div class="sectionHead">
+      <span class="eyebrow">Hekim Kadromuz</span>
+      <h2>53 uzman hekimden bazıları</h2>
+    </div>
+    <div class="docGrid">
+      <div class="docCard"><div class="docPhoto"><img src="../kadin_fotograflari/s05_lara-vural.jpg" alt="Dt. Deniz Sarı"></div><div class="docBody"><h3>Dt. Deniz Sarı</h3><div class="docRole">Ortodonti Bölüm Sorumlusu</div></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../erkek_fotograflari/s08_can-ozturk.jpg" alt="Dt. Barış Ekin"></div><div class="docBody"><h3>Dt. Barış Ekin</h3><div class="docRole">İmplantoloji Bölüm Sorumlusu</div></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../kadin_fotograflari/s11_aylin-kerem.jpg" alt="Dt. Elvan Kaya"></div><div class="docBody"><h3>Dt. Elvan Kaya</h3><div class="docRole">Periodontoloji Bölüm Sorumlusu</div></div></div>
+      <div class="docCard"><div class="docPhoto"><img src="../erkek_fotograflari/s09_toprak-gunay.jpg" alt="Dt. Mert Us"></div><div class="docBody"><h3>Dt. Mert Us</h3><div class="docRole">Endodonti Bölüm Sorumlusu</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sss" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sectionHead"><span class="eyebrow">Sıkça Sorulanlar</span><h2>Bilgilendirme</h2></div>
+    <div class="faq">
+      <details class="faqItem" open><summary class="faqQ">Hangi şubeye başvurmalıyım? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="faqA">Online başvuru formunda tercih ettiğiniz şubeyi belirtmeniz yeterlidir; merkezi kayıt sistemi başvurunuzu ilgili bölüme yönlendirir.</p></details>
+      <details class="faqItem"><summary class="faqQ">Hasta portalına nasıl erişebilirim? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="faqA">İlk randevunuzda oluşturulan hasta numaranızla portal erişim bilgileriniz SMS ile iletilir.</p></details>
+      <details class="faqItem"><summary class="faqQ">Denetim raporlarına nereden ulaşabilirim? <svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="faqA">Bağımsız denetim özetleri talebiniz üzerine kurumsal iletişim birimimiz tarafından paylaşılır.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="basvuru">
+  <div class="wrap">
+    <div class="sectionHead"><span class="eyebrow">Online Başvuru</span><h2>Bölümünüzü seçin, başvurunuzu oluşturun</h2></div>
+    <div class="formSection">
+      <div>
+        <h3 style="font-size:1.15rem">Süreç nasıl işler?</h3>
+        <p style="color:var(--muted);margin-top:12px">Başvurunuz merkezi kayıt sistemine düşer ve seçtiğiniz bölümün koordinatörü tarafından 1 iş günü içinde değerlendirilir.</p>
+      </div>
+      <form id="vizyonForm">
+        <div class="field"><label for="vName">Ad Soyad</label><input id="vName" required></div>
+        <div class="field"><label for="vPhone">Telefon</label><input id="vPhone" type="tel" required></div>
+        <div class="field"><label for="vBranch">Şube</label><select id="vBranch"><option>Levent</option><option>Ataşehir</option><option>Bahçelievler</option><option>Çankaya</option><option>Konak</option></select></div>
+        <div class="field"><label for="vDept">Bölüm</label><select id="vDept"><option>Genel Diş Hekimliği</option><option>Ortodonti</option><option>İmplantoloji</option><option>Estetik Diş Hekimliği</option></select></div>
+        <button class="btn btn-navy" type="submit" style="width:100%;justify-content:center">Başvuruyu Gönder</button>
+        <div id="vSuccess" class="successMsg" hidden>Başvurunuz kaydedildi, ilgili bölüm koordinatörü sizinle iletişime geçecektir.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer id="iletisim">
+  <div class="wrap">
+    <div class="footGrid">
+      <div>
+        <h4>Vizyon Diş Polikliniği</h4>
+        <p>Genel Müdürlük: Büyükdere Cad. No:142, Levent / İstanbul</p>
+        <p>Çağrı Merkezi: <span id="phoneText">0850 200 44 00</span><button class="copyBtn" onclick="copyText('phoneText','cp1')">Kopyala</button></p>
+        <p>E-posta: <span id="mailText">kurumsal@vizyondis.com.tr</span><button class="copyBtn" onclick="copyText('mailText','cp2')">Kopyala</button></p>
+        <p id="cp1" style="color:var(--teal);font-size:.78rem" hidden>Telefon kopyalandı.</p>
+        <p id="cp2" style="color:var(--teal);font-size:.78rem" hidden>E-posta kopyalandı.</p>
+      </div>
+      <div>
+        <h4>Şubeler</h4>
+        <p>Levent</p><p>Ataşehir</p><p>Bahçelievler</p><p>Çankaya</p><p>Konak</p>
+      </div>
+      <div>
+        <h4>Kurumsal</h4>
+        <a href="#basari">Basında Vizyon</a>
+        <a href="#hekimler">Hekim Kadrosu</a>
+      </div>
+      <div>
+        <h4>Hızlı Erişim</h4>
+        <a href="#bolumler">Bölümler</a>
+        <a href="#basvuru">Online Başvuru</a>
+        <a href="#sss">SSS</a>
+      </div>
+    </div>
+    <div class="finePrint"><span>© 2026 Vizyon Diş Polikliniği · Tüm hakları saklıdır.</span><span>Bu site örnek portfolyo amaçlı hazırlanmıştır.</span></div>
+  </div>
+</footer>
+
+<a class="waBtn" href="https://wa.me/905322004400" target="_blank" rel="noopener" aria-label="WhatsApp'tan yazın">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.1 1.7 2.6 4.1 3.6 2.4 1 2.4.7 2.8.6.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.2-.1-.5-.2Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<script>
+document.getElementById('vizyonForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('vSuccess').hidden = false;
+  this.reset();
+});
+function copyText(id,msgId){
+  var text = document.getElementById(id).textContent;
+  function show(){ var m=document.getElementById(msgId); m.hidden=false; setTimeout(function(){m.hidden=true;},2200); }
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(show).catch(show); } else { show(); }
+}
+var burger = document.querySelector('.burger');
+var navlinks = document.querySelector('.navlinks');
+burger.addEventListener('click', function(){
+  var showing = navlinks.style.display === 'flex';
+  navlinks.style.display = showing ? 'none' : 'flex';
+  navlinks.style.flexDirection='column';
+  navlinks.style.position='absolute';
+  navlinks.style.top='58px';
+  navlinks.style.right='20px';
+  navlinks.style.background='var(--surface)';
+  navlinks.style.border='1px solid var(--border)';
+  navlinks.style.borderRadius='10px';
+  navlinks.style.padding='14px 18px';
+});
+</script>
+
+</body></html>
